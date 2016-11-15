@@ -1,5 +1,5 @@
 # ambari-server
-Doker Image of Ambari Server
+Docker Image of Ambari Server
 
 ## Note
 Please note that this project is not officially supported by
@@ -12,3 +12,13 @@ for your appropriate OS: ([Linux](http://docs.docker.com/linux/started/),
 [Mac](http://docs.docker.com/mac/started/),
 [Windows](http://docs.docker.com/windows/started/))
 
+## Using this Image
+Just use docker hub. If you wanna build yourself, I have create a makefile.
+
+```
+# Build image
+make image
+
+# Use latest image from docker hub
+docker pull kalamangga/ambari-server:latest
+```
