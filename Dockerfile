@@ -10,6 +10,5 @@ RUN wget -nv http://public-repo-1.hortonworks.com/ambari/debian7/2.x/updates/2.4
   apt-get update
 RUN apt-get install -y ambari-server && \
   ambari-server setup --silent --java-home /usr/lib/jvm/java-7-openjdk-amd64
-RUN systemctl enable ambari-server && \
-  service ambari-server start
 EXPOSE 8080
+CMD ["service","ambari-server","start"]
