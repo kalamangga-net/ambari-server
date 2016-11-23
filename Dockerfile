@@ -12,4 +12,4 @@ RUN apt-get install -y ambari-server && \
   ambari-server setup --silent --java-home /usr/lib/jvm/java-7-openjdk-amd64
 COPY init.sh /
 EXPOSE 8080
-CMD ["/bin/bash","/init.sh"]
+CMD ["/init.sh"]
